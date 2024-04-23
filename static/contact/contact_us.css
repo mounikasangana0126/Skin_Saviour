@@ -1,0 +1,121 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 3rem 0px;
+    justify-content: center;
+    align-items: center;
+}
+.contact form{
+    box-shadow: 1px 1px 8px 2px gray;
+    border-radius: 6px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact form #feedback,.contact form #name{
+    box-shadow: 2px 2px 6px 1px rgb(187, 186, 186);
+    color: gray;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 4px;
+    height: 50px;
+    width: 300px;
+    border-radius: 8px;
+}
+.contact form #name{
+    height: 40px;
+
+}
+.contact form .name,.contact form .feedback{
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #b56231;
+}
+.contact form .rating{
+    font-size: 24px;
+    color: #b56231;
+    margin-bottom: 10px;
+}
+.contact .division2{
+    margin: 40px 0px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact .division2 div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+}
+.material-symbols-outlined{
+  color: gold;
+}
+
+.contact form .submit{
+    width: 100%;
+    text-align: center;
+}
+.contact form .submit button{
+    padding: 4px;
+    border-radius: 6px;
+    margin-top: 40px;
+    width: 130px;
+    cursor: pointer;
+    height: 40px;
+    outline: none;
+    background-color: #b56231;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+@media (max-width:500px){
+    
+.contact form {
+    width: 80%;
+    padding: 1.5rem;
+}
+.contact form #name,.contact form #feedback {
+    width: 240px;
+}
+}
+@media (max-width:350px){
+.contact form #name,.contact form #feedback {
+    width: 200px;
+}
+}
+
+/* footer */
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+    font-weight: 500;
+}
+.footer-container .content a{
+    text-decoration: none;
+    color: black;
+}
+.footer-container .content a:hover{
+    text-decoration: underline;
+}
+.footer-container .icons {
+    display: flex;
+    gap: 10px;
+    align-items:center ;
+    justify-content: center;
+}
+.footer-container .icons a{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}

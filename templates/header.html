@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'header/header.css' %}">
+    <link rel="stylesheet" href="{% static 'home/home.css' %}">
+    <link rel="stylesheet" href="{% static 'footer/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'about/about.css' %}">
+    <link rel="stylesheet" href="{% static 'quiz/quiz.css' %}">
+    <link rel="stylesheet" href="{% static 'skin treatment/skin_treatment.css' %}">
+    <link rel="stylesheet" href="{% static 'contact/contact_us.css' %}">
+    <link rel="stylesheet" href="{% static 'tips/tips.css' %}">
+    <script src="{% static 'header/header.js' %}" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   
+    <title>SKIN SAVIOUR</title>
+</head>
+<body>
+    <div id="overlay"><div class="popup" id="popup"></div></div>
+    <nav class="navigation">
+        <img class="image" src="{% static 'header/images/banner1.jpg' %}" alt="">
+        <div class="container">
+        <div class="nav" id="navbar">
+        <div class="section-logo" >
+            <img src="{% static 'header/images/logo.png' %}" alt="logo" width="40px" height="40px">
+            <h3 class="name">SKIN-SAVIOUR</h3>
+        </div>
+        <div class="main-hamburger">
+            <button type="button" class="hamburger" id="hamburger">
+                <span class="material-symbols-outlined">
+                menu
+            </span class="content" id="ham-content">
+            </button>
+            <div class="tabs-hamburger" id="tabs-hamburger">
+           <ul>
+            <a href="{% url 'home' %}"><li  class="{% if active_tab == 'home' %}active{% endif %}">Home</li></a>
+            <a href="{% url 'about' %}"><li  class="{% if active_tab == 'about' %}active{% endif %}">About Us</li></a>
+            <a href="{% url 'quiz' %}"><li class="{% if active_tab == 'quiz' %}active{% endif %}">Take Your Quiz</li></a>
+            <a href="{% url 'skin_treatment' %}"><li class="{% if active_tab == 'skin_treatment' %}active{% endif %}">Skin Treatement</li></a>
+            <a href="{% url 'tips' %}"><li  class="{% if active_tab == 'tips' %}active{% endif %}">Tips</li></a>
+            <a href="{% url 'contact_us' %}"><li class="{% if active_tab == 'contact_us' %}active{% endif %}">Contact Us</li></a>
+            
+               <button type="button" class="profile" id="profile" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+                <div id="dropdown">
+                  <div class="dropdown-items">
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'logout' %}" onclick=logout()>Logout</a>
+                  </div>
+                </div>
+               </button>
+            </ul>
+        </div>
+        </div>
+        <ul class="tabs">
+            <a href="{% url 'home' %}"><li  class="{% if active_tab == 'home' %}active{% endif %}">Home</li></a>
+            <a href="{% url 'about' %}"><li  class="{% if active_tab == 'about' %}active{% endif %}">About Us</li></a>
+            <a href="{% url 'quiz' %}"><li class="{% if active_tab == 'quiz' %}active{% endif %}">Take Your Quiz</li></a>
+            <a href="{% url 'skin_treatment' %}"><li class="{% if active_tab == 'skin_treatment' %}active{% endif %}">Skin Treatement</li></a>
+            <a href="{% url 'tips' %}"><li  class="{% if active_tab == 'tips' %}active{% endif %}">Tips</li></a>
+            <a href="{% url 'contact_us' %}"><li class="{% if active_tab == 'contact_us' %}active{% endif %}">Contact Us</li></a>
+            
+            <button type="button" class="profile1" id="profile1" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+              <div id="dropdown1">
+                  <div class="dropdown-items1">
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'logout' %}" onclick=logout()>Logout</a>
+                  </div>
+              </div>
+            </button>
+              
+        </ul>
+        </div>
+        <div class="caption">
+          <h1 class="content" id="content">A ONE STOP DESTINATION FOR YOUR SKIN TIPS</h1>
+        </div>
+        </div>
+    </nav>
+</body>
+</html>

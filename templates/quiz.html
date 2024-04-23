@@ -1,0 +1,170 @@
+{% include 'header.html' %}{% load static %}
+<div id="overlay"><div class="popup" id="popup"></div></div>
+<div class="quiz" id="quiz">
+    <div class="form-content" id="form-content">
+    <h1>Quiz</h1>
+    <form id="quiz-form" action="{% url 'save_data' %}" method="POST">
+        {% csrf_token %}
+        <h2>1. what skin treatment you prefer?</h2>
+        <input type="radio" id="ques11" name="treatment" value="Conventional Products" required>
+        <label for="ques11" class="ques11" >Conventional Products</label></br>
+        <input type="radio" id="ques12" name="treatment" value="Natural Products" required>
+        <label for="ques12" class="ques12">Natural Products</label></br>
+        <h2>2. what's Your age?</h2>
+        <input type="radio" id="ques21" name="age" value="&#60 25" required>
+        <label for="ques21" class="ques21">&#60 25</label></br>
+        <input type="radio" id="ques22" name="age" value="25-40" required>
+        <label for="ques22" class="ques22">25-40</label></br>
+        <h2>3. How does your skin feel when you wake up or 1 hour after you wash your face?</h2>
+        <input type="radio" id="ques31" name="skin_type" value="Dry" required>
+        <label for="ques31" class="ques31">Dry</label></br>
+        <input type="radio" id="ques32" name="skin_type" value="Oily" required>
+        <label for="ques32" class="ques32">Oily</label></br>
+        <input type="radio" id="ques33" name="skin_type" value="Combination(Oily at T junction and Dry at cheeks)" required>
+        <label for="ques33" class="ques33">Combination(Oily at T junction and Dry at cheeks)</label></br>
+        <input type="radio" id="ques34" name="skin_type" value="Normal" required>
+        <label for="ques34" class="ques34">Normal</label></br>
+        <input type="radio" id="ques35" name="skin_type" value="Sensitive" required>
+        <label for="ques35" class="ques35">Sensitive</label></br>
+        <h2>4. Your Major Skin Concerns</h2>
+        <input type="radio" id="ques41" name="skin_concerns" value="Dehydration/ Breakouts" required>
+        <label for="ques41" class="ques41">Dehydration/ Breakouts</label></br>
+        <input type="radio" id="ques42" name="skin_concerns" value="Active Acne" required>
+        <label for="ques42" class="ques42">Active Acne</label></br>
+        <input type="radio" id="ques43" name="skin_concerns" value="Acne Marks" required>
+        <label for="ques43" class="ques43">Acne Marks</label></br>
+        <input type="radio" id="ques44" name="skin_concerns" value="Dry Patches" required>
+        <label for="ques44" class="ques44">Dry Patches</label></br>
+        <input type="radio" id="ques45" name="skin_concerns" value="Wrinkles/Open pores" required>
+        <label for="ques45" class="ques45">Wrinkles/Open pores</label></br>
+        <input type="radio" id="ques46" name="skin_concerns" value="Hyper Pigmentation" required>
+        <label for="ques46" class="ques46">Hyper Pigmentation</label></br>
+        <input type="radio" id="ques47" name="skin_concerns" value="Oil Control" required>
+        <label for="ques47" class="ques47">Oil Control</label></br>
+        <input type="radio" id="ques48" name="skin_concerns" value="Sensitivity and redness" required>
+        <label for="ques48" class="ques48">Sensitivity and redness</label></br>
+        <!-- <input type="text" style="display:none" required> -->
+        <h2>5. How does your skin react to new skincare products?</h2>
+        <input type="radio" id="ques51" name="react_to_new_products" value="Gets irritated and red easily" required>
+        <label for="ques51" class="ques51">Gets irritated and red easily</label></br>
+        <input type="radio" id="ques52" name="react_to_new_products" value="Adapts Well" required>
+        <label for="ques52" class="ques52">Adapts Well</label></br>
+        <input type="radio" id="ques53" name="react_to_new_products" value="Breaks out" required>
+        <label for="ques53" class="ques53">Breaks out</label></br>
+        <input type="radio" id="ques54" name="react_to_new_products" value="Not Sure" required>
+        <label for="ques54" class="ques54">Not Sure</label></br>
+        <!-- <h2>6. Is your skin sensitive?</h2>
+        <input type="radio" id="ques61" name="sensitive" value="Yes" required >
+        <label for="ques61" class="ques61">Yes</label></br>
+        <input type="radio" id="ques62" name="sensitive" value="No" required>
+        <label for="ques62" class="ques62">No</label></br> -->
+        <h2>6. Sleep Cycle</h2>
+        <input type="radio" id="ques61" name="sleep_cycle" value="&#60 4hrs" required>
+        <label for="ques61" class="ques61">&#60 4hrs</label></br>
+        <input type="radio" id="ques62" name="sleep_cycle" value="&#60 6hrs" required>
+        <label for="ques62" class="ques62">&#60 6hrs</label></br>
+        <input type="radio" id="ques63" name="sleep_cycle" value="6 &#45 8hrs" required>
+        <label for="ques63" class="ques63">6 &#45 8hrs</label></br>
+        <input type="radio" id="ques64" name="sleep_cycle" value="&#62 8hrs" required>
+        <label for="ques64" class="ques64">&#62 8hrs</label></br>
+        <h2>7. What is your preferred skincare texture ?</h2>
+        <input type="radio" id="ques71" name="skincare_texture" value="Cream" required>
+        <label for="ques71" class="ques71">Cream</label></br>
+        <input type="radio" id="ques72" name="skincare_texture" value="Gel" required>
+        <label for="ques72" class="ques72">Gel</label></br>
+        <input type="radio" id="ques73" name="skincare_texture" value="Light Weight" required>
+        <label for="ques73" class="ques73">Light Weight</label></br>
+        <div  class="submit">
+        <button type="submit" id="submit-quiz">Submit</button>
+        </div>
+    </form>
+    </div>
+    <div class="skin_analysis" id="skin_analysis">
+        <h1>Quiz analysis</h1>
+        <div class="analysis">
+            <div><span class="side">Skin treatment : </span><span class="exist" id="exist">{{context.treatment}}</span></div>
+            <div><span class="side">Age : </span><span class="exist">{{context.age}}</span></div>
+            <div><span class="side">skin type : </span><span class="exist">{{context.skin_type}}</span></div>
+            <div><span class="side">skin concerns : </span><span class="exist">{{context.skin_concerns}}</span></div>
+            <div><span class="side">React to new products : </span><span class="exist">{{context.react_to_new_products}}</span></div>
+            <div><span class="side">Sleep cycle : </span><span class="exist">{{context.sleep_cycle}}</span></div>
+            <div><span class="side">Skincare texture : </span><span class="exist">{{context.skincare_texture}}</span></div>
+        </div>
+        <div class="submit">
+        <button type="button" id="retake">Retake your quiz</button>
+        </div>
+        <h3 classs="last-section">Ready to see your results : <a href="{% url 'skin_treatment' %}">skin treatment</a></h3>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer-container" style="background:url('../static/footer/images/products1.jpg');background-repeat: no-repeat;background-size: cover;background-position-y: center;">
+    <div class="icons">
+        <a href="https://mail.google.com/mail/"><img class="image" src="{% static 'footer/images/email.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://www.instagram.com/"><img class="image" src="{% static 'footer/images/instagram.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://twitter.com/?lang=en"><img class="image" src="{% static 'footer/images/twitter.png' %}" alt="" width="40px" height="30px"></a>
+    </div>
+    <div class="content">FOR MORE INFORMATION CONNECT US AT: <a href="https://mail.google.com/mail/">skinsaviour@gmail.com</a></div>
+</div>
+
+
+<script>
+    // JavaScript code to display a pop-up message when the form is submitted
+    document.getElementById('quiz-form').addEventListener('submit', function(event) {
+        var overlay = document.getElementById('overlay');
+        var popup = document.getElementById('popup');
+        var child=document.createElement("p");
+
+
+        child.classList.add("loginerror");
+        child.innerText="Data has been saved successfully";
+        popup.appendChild(child);
+        overlay.style.display = 'block';
+
+        setTimeout(()=>{
+            overlay.style.display = 'none';
+            clearInterval(timerInterval);
+        }, 3000)
+
+    });
+
+
+    // Retake quiz
+
+    var retake=document.getElementById("retake")
+    var analysis=document.getElementById("skin_analysis")
+    var quiz=document.getElementById("form-content")
+    var exist=document.getElementById("exist")
+    var quizform=document.getElementById("quiz-form")
+    if(exist.innerHTML){
+        analysis.style.display=""
+        quiz.style.display="none"
+    }
+    else{
+        analysis.style.display="none"
+        quiz.style.display=""
+    }
+    retake.addEventListener("click",()=>{
+        analysis.style.display="none"
+        quiz.style.display=""
+
+    })
+    quizform.addEventListener("submit",()=>{
+        analysis.style.display=""
+        quiz.style.display="none"
+    })
+
+    /* function validateForm() {
+        var hiddenInput = document.querySelector('input[type="text"]');
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var checked = false;
+        for (var i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i].checked) {
+            checked = true;
+            break;
+          }
+        }
+        hiddenInput.setCustomValidity(checked ? '' : 'Please select at least one option.');
+        return checked;
+      } */
+</script>

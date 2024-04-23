@@ -1,0 +1,100 @@
+{% include 'header.html' %}{% load static %}
+<div id="overlay"><div class="popup" id="popup"></div></div>
+<div class="contact">
+    <form id="contact_form" action="{% url 'save_form_data' %}" method="POST">
+        {% csrf_token %}
+            <label for="name" class="name" >Name</label>
+            <input type="text" id="name" name="name" required>
+        <div class="division2">
+            <label for="rating" class="rating">Rating</label>
+            <div>
+            <input type="radio" id="one" name="rating" value="one" required>
+            <label for="one" class="one" ><span class="material-symbols-outlined">
+                star
+                </span></label></br>
+            </div>
+            <div>
+            <input type="radio" id="two" name="rating" value="two" required>
+            <label for="two" class="two" ><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                    star
+                    </span></label></br>
+            </div>
+            <div>
+            <input type="radio" id="three" name="rating" value="three" required>
+            <label for="three" class="three" ><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                    star
+                    </span><span class="material-symbols-outlined">
+                        star
+                        </span></label></br>
+            </div>
+            <div>
+            <input type="radio" id="four" name="rating" value="four" required>
+            <label for="four" class="four" ><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                    star
+                    </span><span class="material-symbols-outlined">
+                        star
+                        </span><span class="material-symbols-outlined">
+                            star
+                            </span></label></br>
+            </div>
+            <div>            
+            <input type="radio" id="five" name="rating" value="five" required>
+            <label for="five" class="five" ><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                    star
+                    </span><span class="material-symbols-outlined">
+                        star
+                        </span><span class="material-symbols-outlined">
+                            star
+                            </span><span class="material-symbols-outlined">
+                                star
+                                </span></label></br>
+            </div>
+        </div>
+            <label for="feedback" class="feedback" >Feedback</label>
+            <input type="text" id="feedback" name="feedback" required></textarea>
+        <div class="submit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+<!-- footer -->
+<div class="footer-container" style="background:url('../static/footer/images/products1.jpg');background-repeat: no-repeat;background-size: cover;background-position-y: center;">
+    <div class="icons">
+        <a href="https://mail.google.com/mail/"><img class="image" src="{% static 'footer/images/email.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://www.instagram.com/"><img class="image" src="{% static 'footer/images/instagram.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://twitter.com/?lang=en"><img class="image" src="{% static 'footer/images/twitter.png' %}" alt="" width="40px" height="30px"></a>
+    </div>
+    <div class="content">FOR MORE INFORMATION CONNECT US AT: <a href="https://mail.google.com/mail/">skinsaviour@gmail.com</a></div>
+</div>
+
+<script>
+    // JavaScript code to display a pop-up message when the form is submitted
+    document.getElementById('contact_form').addEventListener('submit', function(event) {
+        var overlay = document.getElementById('overlay');
+        var popup = document.getElementById('popup');
+        var child=document.createElement("p");
+
+
+        child.classList.add("loginerror");
+        child.innerText="Thank You For Your Valuable Feedback";
+        popup.appendChild(child);
+        overlay.style.display = 'block';
+
+        setTimeout(()=>{
+            overlay.style.display = 'none';
+            clearInterval(timerInterval);
+        }, 3000)
+
+    });
+</script>
+

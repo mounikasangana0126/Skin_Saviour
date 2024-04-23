@@ -1,0 +1,42 @@
+{% include 'header.html' %}{% load static %}
+
+<div class="about">
+    <h1 class="heading">DESCRIPTION</h1>
+    <div class="division1">
+        <p>Welcome to our skincare sanctuary, where radiant skin meets mindful care. Explore Our tips and personalised routines tailored to unveil your natural glow. Let our site be your trusted guide on the journey to healthier and happier skin. Embrace the beauty of self-care and unlock the secrets to a luminous complexion with us.</p></br>
+        <p>Our team of skincare experts understands that every face is unique. We don't believe in a "one-size-fits-all" solution.  Instead, we leverage our knowledge of skin types and the latest advancements in skincare science to create customised routines tailored to your specific needs.</p></br>
+        <p>We have an unwavering commitment to quality, transparency, and ethical practices. We suggests only the finest natural ingredients, handpicked from trusted suppliers around the globe. we suggests products that are free from harsh chemicals, parabens, and toxins, ensuring that your skincare journey is as pure and gentle as nature intended.</p></br>
+        <p>As a company rooted in integrity and authenticity, we are committed to making a positive impact on your skin . </p>
+    </div>
+    <div class="division2">
+        <img src="{% static 'header/images/logo.png' %}" alt="">
+        <div>
+            <p>At Skin-Saviour, we believe that skincare should be a ritual of self-care, rooted in nature's wisdom and backed by modern science, where beauty meets nature in a harmonious blend of science and tradition.</p></br>
+            <p>Our mission is to empower you to feel confident and comfortable in your own skin. We believe that with the right knowledge and personalised care, everyone can achieve a healthy, glowing complexion.</p></br>
+            <p>We strive to empower and educate our community, fostering a deeper understanding of skincare and its profound connection to overall well-being. Through our Tips we aim to guide you to embrace your unique beauty and cultivate a lifestyle of self-love and self-care.</p></br>
+            <p class="color">Experience The Essence Of Beauty With Skin-Saviour</p>
+        </div>
+    </div>
+    <div class="division3">
+        <h3>Here's what sets us apart:</h3></br>
+        <div class="div3-content">
+        <p><span class="underline">Skin Type Expertise :</span> We go beyond the basics of dry, oily and combination skin. We consider factors like sensitivity, age, and lifestyle to create a routine that truly targets your concerns.</p></br>
+        <p><span class="underline">Science-Backed Recommendations:</span> Our suggestions are based on proven ingredients and formulations. We stay up-to-date on the latest research to ensure you're getting the most effective products.</p></br>
+        <p><span class="underline">Your Skin Journey Partner :</span> We don't just recommend products &#45 we become your partner on your skincare journey. We offer ongoing support through educational resources, and a community forum where you can connect with us.</p></br>
+        </div>
+    </div>
+    <div class="division4">
+        <h2 class="heading">Ready to unlock your skin's full potential? <a href="{% url 'quiz' %}">Take our quick skin Quiz</a> and let us guide you on your journey to radiant skin.Together, let's rediscover the beauty of nature and unleash the power of skincare that's as pure as it is potent.
+        </h2>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer-container" style="background:url('../static/footer/images/products1.jpg');background-repeat: no-repeat;background-size: cover;background-position-y: center;">
+    <div class="icons">
+        <a href="https://mail.google.com/mail/"><img class="image" src="{% static 'footer/images/email.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://www.instagram.com/"><img class="image" src="{% static 'footer/images/instagram.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://twitter.com/?lang=en"><img class="image" src="{% static 'footer/images/twitter.png' %}" alt="" width="40px" height="30px"></a>
+    </div>
+    <div class="content">FOR MORE INFORMATION CONNECT US AT: <a href="https://mail.google.com/mail/">skinsaviour@gmail.com</a></div>
+</div>

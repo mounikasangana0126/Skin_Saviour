@@ -1,0 +1,194 @@
+.home-container{
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 3rem;
+}
+.section-two{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 4rem 0px;
+}
+
+.section-two .text{
+    color:rgba(173,121,91,255);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-three{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 4rem;
+    
+}
+.section-three .conventional, .section-three .natural{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+}
+.section-three .conventional img, .section-three .natural img{
+    width: 90%;
+    height: 300px;
+}
+.section-three .conventional h3, .section-three .natural h3{
+    color: #b56231;
+    font-weight: 600;
+    font-size: 28px;
+    padding-top: 10px;
+}
+.section-three .conventional p, .section-three .natural p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0px 40px;
+}
+.section-four,.section-five{
+    margin-bottom:5rem;
+
+}
+.section-four .text,.section-five .text{
+    color:rgba(173,121,91,255);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3rem;
+    /* padding-top: 3rem; */
+}
+
+.section-four .card-container,.section-five .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    gap: 30px;
+    text-align: center;
+}
+.section-four .card-container .cards,.section-five .card-container .cards{
+    width: 300px;
+}
+.section-four .card-container .cards img,.section-five .card-container .cards img{
+    width:300px;
+    height: 300px;
+    
+}
+.section-four .card-container .cards h3,.section-five .card-container .cards h3{
+    color:rgba(173,121,91,255);
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+
+/* footer */
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+    font-weight: 500;
+}
+.footer-container .content a{
+    text-decoration: none;
+    color: black;
+}
+.footer-container .content a:hover{
+    text-decoration: underline;
+}
+.footer-container .icons {
+    display: flex;
+    gap: 10px;
+    align-items:center ;
+    justify-content: center;
+}
+.footer-container .icons a{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+.footer-container .content{
+    text-align: center;
+}
+
+/* media queries */
+
+@media (max-width:1400px){
+    .section-four .card-container .cards,.section-five .card-container .cards{
+        width: 250px;
+    }
+    .section-four .card-container .cards img,.section-five .card-container .cards img{
+        width:250px;
+        height: 300px;
+        
+    }
+}
+@media (max-width:1190px){
+    .section-four .card-container .cards,.section-five .card-container .cards{
+        width: 350px;
+    }
+    .section-four .card-container .cards img,.section-five .card-container .cards img{
+        width:300px;
+        height: 300px;
+        
+    }  
+    .section-four .text,.section-five .text{
+        font-size: 32px;
+    }
+    
+}
+@media (max-width:920px){
+    .section-three{
+        flex-direction: column;
+        align-items: center ;
+        gap: 40px;
+    }
+    .section-two .text{
+        font-size:34px ;
+    }
+    .section-three .conventional, .section-three .natural{
+        width: 100%;
+
+    }
+    
+    .section-three .conventional p, .section-three .natural p{
+        padding: 0px;
+    }
+}
+@media (max-width:800px){
+    
+    .section-four .card-container .cards,.section-five .card-container .cards{
+        width: 250px;
+    }
+    .section-four .card-container .cards img,.section-five .card-container .cards img{
+        width:250px;
+        height: 300px;
+        
+    } 
+    
+}
+@media (max-width:400px){
+    .section-three .conventional img, .section-three .natural img{
+        width: 250px;
+    }
+    .section-four .text,.section-five .text,.section-two .text{
+        font-size: 30px;
+    }
+    .home-container{
+        margin: 0px 1rem;
+    }
+}

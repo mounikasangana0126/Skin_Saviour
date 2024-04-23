@@ -1,0 +1,79 @@
+{% include 'header.html' %}{% load static %}
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  intergrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+
+<main class="home-container">
+    <div class="section-two">
+       <div class="text">Let Us Guide You On A Journey Towards Unveiling Your Inner Glow</div>
+    </div>
+    <div class="section-three">
+        <div class="conventional">
+            <img src="{% static 'home/images/conventional.jpeg' %}" alt="conventional">
+            <h3>CONVENTIONAL PRODUCTS</h3>
+            <p>Conventional skincare products follow traditional or widely accepted practices in their formulation and manufacturing and may include preservatives, fragrances, and other additives.</p>
+        </div>
+        <div class="natural">
+            <img src="{% static 'home/images/natural.webp' %}" alt="natural">
+            <h3>NATURAL PRODUCTS</h3>
+            <p>Natural skincare  products refer to ingredients sourced from nature, like plant extracts, essential oils, and minerals. They offer benefits such as nourishing the skin, providing antioxidants, and soothing irritation.</p>
+        </div>
+    </div>
+    <div class="section-four">
+        <div class="text">Revamp Your Basic Skincare Routine With Conventional Products</div>
+        <div class="card-container">
+        <div class="cards">
+            <img src="{% static 'home/images/facewash.jpeg' %}" alt="">
+            <h3>FACEWASH</h3>
+        </div>
+        <div class="cards">
+            <img src="{% static 'home/images/serum.png' %}" alt="">
+            <h3>SERUM</h3>
+        </div>
+        <div class="cards">
+            <img src="{% static 'home/images/moisturiser.jpg' %}" alt="">
+            <h3>MOISTURISER</h3>
+        </div>
+        <div class="cards">
+            <img src="{% static 'home/images/sunscreen.jpeg' %}" alt="">
+            <h3>SUNSCREEN</h3>
+        </div>
+        </div>
+    </div>
+    <div class="section-five">
+        <div class="text">Elevate Your Skin Regimen With The Goodness Of Natural Products</div>
+        <div class="card-container">
+        <div class="cards">
+            <img src="{% static 'home/images/honeywash.jpg' %}" alt="">
+            <h3>HONEY WASH</h3>
+        </div>
+        <div class="cards">
+            <img src="{% static 'home/images/jojoba.png' %}" alt="">
+            <h3>JOJOBA SERUM</h3>
+        </div>
+        <div class="cards">
+            <img src="{% static 'home/images/alovera.jpg' %}" alt="">
+            <h3>ALOVERA MOSTURIZER</h3>
+        </div>
+        <div class="cards">
+            <img src="{% static 'home/images/besan pack.png' %}" alt="">
+            <h3>BESAN PACK</h3>
+        </div>
+        </div>
+    </div>
+</main>
+
+<!-- footer -->
+<div class="footer-container" style="background:url('../static/footer/images/products1.jpg');background-repeat: no-repeat;background-size: cover;background-position-y: center;">
+    <div class="icons">
+        <a href="https://mail.google.com/mail/"><img class="image" src="{% static 'footer/images/email.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://www.instagram.com/"><img class="image" src="{% static 'footer/images/instagram.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://twitter.com/?lang=en"><img class="image" src="{% static 'footer/images/twitter.png' %}" alt="" width="40px" height="30px"></a>
+    </div>
+    <div class="content">FOR MORE INFORMATION CONNECT US AT: <a href="https://mail.google.com/mail/">skinsaviour@gmail.com</a></div>
+</div>

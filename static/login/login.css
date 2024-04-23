@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.login .heading{
+    color:#b56231;
+    margin-top: 3rem;
+}
+.login form{
+    box-shadow: 1px 1px 8px 2px gray;
+    margin: 2rem;
+    width: 600px;
+    border-radius: 6px;
+    padding: 50px;
+}
+.login form label{
+    width: 30%;
+    color: #b56231;
+    font-size: 25px;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+    padding: 10px;
+}
+.login form input{
+    width: 45%;
+    border-radius: 3px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 4px 1px rgb(216, 215, 215);
+    height: 30px;
+    font-size: 18px;
+    color: gray;
+    margin-top: 1rem;
+}
+.login form button{
+    align-items: center;
+    margin: 30px;
+    color: white;
+    background-color:#b56231;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 8px 20px;
+}
+.login form button:hover{
+    cursor: pointer;
+}
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.popup .message{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+
+}
+.timer-bar {
+    margin-top: 30px;
+    width: 100%; 
+    height: 15px;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    transition: width 0.3s linear;
+}
+#overlay {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 99; 
+    display: none; 
+}
+@media (max-width:650px){
+    .login form {
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .login form label {
+        font-size: 24px;
+        width: 90%;
+        line-height: 30px;
+        margin-right: 0px;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .login form input{
+        width: 80%;
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+
+}
+@media (max-width:430px){
+    .login form {
+        width: 90%;
+    }
+    
+    .login form input{
+        width: 90%;
+        margin-left: 20px
+    }
+
+}

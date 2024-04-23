@@ -1,0 +1,322 @@
+/* natural products */
+.naturalproducts{
+    margin-right: 5rem;
+    margin-left: 5rem;
+    
+}
+
+.naturalproducts .disclaimer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #b56231;
+    font-size: 20px;
+    /* font-weight:550; */
+    line-height: 2rem;
+    margin: 1rem;
+}
+.naturalproducts .heading{
+    text-align: center;
+    font-size: 40px;
+    color: #b56231;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.naturalproducts h2{
+    color: #b56231;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 72%;
+
+    
+}
+.naturalproducts .apply{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    line-height: 30px;
+    font-size:20px;
+    gap: 70px;
+}
+.naturalproducts .images img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+.naturalproducts .benefits h3{
+    color: #b56231;
+    font-size: 30px;
+}
+.naturalproducts .benefits{
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    font-size:20px;
+    margin: 2rem;
+    line-height: 30px;
+}
+.naturalproducts .preparation{
+    display: flex;
+    align-items: flex-start;
+    font-size:20px;
+    line-height: 30px;
+    margin: 1rem;
+    gap: 40px;
+    text-align: justify;
+}
+.naturalproducts .preparation h2{
+    color: #b56231;
+    margin: 0;
+}
+/* conventional products */
+.skin-treatment h1{
+    color: #b56231;
+    font-size: 40px;
+    margin: 3rem 0px;
+    text-align: center;
+    width: 100%;
+}
+.skin-treatment h2{
+    color: #b56231;
+    font-size: 30px;
+    margin: 3rem 0px;
+}
+.skin-treatment .message{
+    color: #b56231;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+.skin-treatment .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 8rem;
+}
+.skin-treatment h3{
+    color: #b56231;
+    font-size: 30px;
+    margin: 3rem 0px;
+}
+.skin-treatment .facewash .essentials,
+.skin-treatment .serum .essentials,
+.skin-treatment .moisturizer .essentials,
+.skin-treatment .sunscreen .essentials{
+    display: flex;
+    margin: 4rem 0px;
+    gap:80px;
+}
+.skin-treatment .facewash .essentials .head,
+.skin-treatment .serum .essentials .head,
+.skin-treatment .moisturizer .essentials .head,
+.skin-treatment .sunscreen .essentials .head{
+    color: #b56231;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 20px;
+}
+/* .skin-treatment .facewash .essentials .head-desc,
+.skin-treatment .serum .essentials .head-desc,
+.skin-treatment .moisturizer .essentials .head-desc,
+.skin-treatment .sunscreen .essentials .head-desc{
+    color: #b56231;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 20px
+} */
+.skin-treatment .facewash .essentials .description,
+.skin-treatment .serum .essentials .description,
+.skin-treatment .moisturizer .essentials .description,
+.skin-treatment .sunscreen .essentials .description{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skin-treatment .facewash .essentials .description li,
+.skin-treatment .serum .essentials .description li,
+.skin-treatment .moisturizer .essentials .description li,
+.skin-treatment .sunscreen .essentials .description li{
+    margin-left: 40px;
+}
+.skin-treatment .facewash .essentials .head-images,
+.skin-treatment .serum .essentials .head-images,
+.skin-treatment .moisturizer .essentials .head-images,
+.skin-treatment .sunscreen .essentials .head-images{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+.skin-treatment .facewash .essentials .head-images img,
+.skin-treatment .serum .essentials .head-images img,
+.skin-treatment .moisturizer .essentials .head-images img,
+.skin-treatment .sunscreen .essentials .head-images img{
+    width:40% ;
+    height: 100%;
+    border-radius: 10px;
+}
+.night-routine{
+    margin-left: 8rem;
+    margin-right: 8rem;
+    font-size: 20px;
+    line-height: 2rem;
+}
+.night-routine .steps ul{
+    width: 70%;
+}
+.night-routine .subheading{
+    font-size: 20px;
+    font-weight:lighter;
+}
+.night-routine .steps{
+    display: flex;
+    align-items:flex-start;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    gap: 80px;
+    width: 100%;
+    
+}
+.night-routine .steps h3{
+    margin: 0;
+    display: flex;
+    color: #b56231;
+    font-size: 25px;
+}
+.night-routine .essentials{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 25px;
+    margin-bottom: 40px;
+    width: 100%;
+    
+}
+.night-routine .essentials h3{
+    margin: 0;
+    width: 20%;
+}
+.night-routine .essentials ul li{
+    margin-left: 25px;
+    /* line-height: 3rem; */
+}
+/* footer */
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+    font-weight: 500;
+}
+.footer-container .content a{
+    text-decoration: none;
+    color: black;
+}
+.footer-container .content a:hover{
+    text-decoration: underline;
+}
+.footer-container .icons {
+    display: flex;
+    gap: 10px;
+    align-items:center ;
+    justify-content: center;
+}
+.footer-container .icons a{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+.footer-container .content a:hover{
+    text-decoration: underline;
+}
+.footer-container .icons {
+    display: flex;
+    gap: 10px;
+    align-items:center ;
+    justify-content: center;
+}
+.footer-container .icons a{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+
+@media (max-width:1330px){
+.skin-treatment .facewash .essentials .head-images img,
+.skin-treatment .serum .essentials .head-images img,
+.skin-treatment .moisturizer .essentials .head-images img,
+.skin-treatment .sunscreen .essentials .head-images img{
+    width:120px ;
+    height: 160px;
+}
+.skin-treatment .content{
+    margin: 0px 3rem;
+}
+}
+@media (max-width:830px){
+.skin-treatment .facewash #two,
+.skin-treatment .serum #two,
+.skin-treatment .moisturizer #two,
+.skin-treatment .sunscreen #two{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.skin-treatment .facewash .essentials .head-images img,
+.skin-treatment .serum .essentials .head-images img,
+.skin-treatment .moisturizer .essentials .head-images img,
+.skin-treatment .sunscreen .essentials .head-images img{
+    width:160px ;
+    height: 160px;
+}
+}
+@media (max-width:600px){
+    .skin-treatment .facewash .essentials,
+    .skin-treatment .serum .essentials,
+    .skin-treatment .moisturizer .essentials,
+    .skin-treatment .sunscreen .essentials{
+        flex-direction: column;
+        gap:20px;
+    }
+    .skin-treatment .facewash .essentials .description, 
+    .skin-treatment .serum .essentials .description, 
+    .skin-treatment .moisturizer .essentials .description,
+     .skin-treatment .sunscreen .essentials .description {
+        padding-left: 20px;
+    }
+    .skin-treatment .facewash #two,
+    .skin-treatment .serum #two,
+    .skin-treatment .moisturizer #two,
+    .skin-treatment .sunscreen #two{
+    gap: 20px;
+}
+.naturalproducts {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-size: 20px;
+    line-height: 20px;
+}
+.skin-treatment h1 {
+    font-size: 30px;
+}
+.skin-treatment h3 {
+    margin: 0px;
+}
+}

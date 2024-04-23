@@ -1,0 +1,408 @@
+{% include 'header.html' %}{% load static %}
+
+<div class="naturalproducts">
+    <div class="disclaimer" id="disclaimer">
+        <p>
+             When using these ingredients , it's important to patch test first, especially if you have sensitive skin, to make sure you don't have any adverse reactions. Additionally, remember that natural products may not lather or feel the same as conventional cleansers, but they can still effectively cleanse the skin.
+        </p>
+    </div>
+    {% for facewash in facewash %}
+        <div class="heading">
+            {{facewash.facewash1 |safe}}<br>
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ facewash.facewash1_image.url }}" alt=""><br>
+            </div>
+            {{facewash.facewash1_application |safe}}<br>
+        </div>
+        <div class="benefits">
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{facewash.facewash1_benefits |safe}}<br>
+            </ul>
+        </div>
+        <div class="heading">
+            {{facewash.facewash2 |safe}}<br>
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ facewash.facewash2_image.url }}" alt="">
+            </div>
+            {{facewash.facewash2_application |safe}}<br>
+        </div>
+        <div class="benefits">
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{facewash.facewash2_benefits |safe}}<br>
+            </ul>
+        </div>
+        
+        {% endfor %}
+        {% for serum in serum %}
+        <div class="heading">
+            {{serum.serum1 |safe}}
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ serum.serum1_image.url }}" alt="">
+            </div>
+            {{serum.serum1_application |safe}}
+        </div>
+        <div class=benefits>
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{serum.serum1_benefits |safe}}
+            </ul>
+        </div>
+        <div class="heading">
+            {{serum.serum2 |safe}}
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ serum.serum2_image.url }}" alt="">
+            </div>
+            {{serum.serum2_application |safe}}
+        </div>
+        <div class="benefits">
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{serum.serum2_benefits |safe}}
+            </ul>
+        </div>
+        {% endfor %}
+        {% for moisturizer in moisturizer%}
+        <div class="heading">
+            {{moisturizer.moisturizer1 |safe}}
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ moisturizer.moisturizer1_image.url }}" alt="">
+            </div>
+            {{moisturizer.moisturizer1_application |safe}}
+        </div>
+        <div class=benefits>
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{moisturizer.moisturizer1_benefits |safe}}
+            </ul>
+        </div>
+        <div class="heading">
+            {{moisturizer.moisturizer2 |safe}}
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ moisturizer.moisturizer2_image.url }}" alt="">
+            </div>
+            {{moisturizer.moisturizer2_application |safe}}
+        </div>
+        <div class="benefits">
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{moisturizer.moisturizer2_benefits |safe}}
+            </ul>
+        </div>
+        {% endfor %}
+        {% for scrub in scrub %}
+        <div class="heading">
+            {{scrub.scrub1 |safe}}
+        </div>
+        <div class="preparation">
+            <h2>PREPARATION:</h2>
+            {{scrub.scrub1_preperation |safe}}
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ scrub.scrub1_image.url }}" alt="">
+            </div>
+            {{scrub.scrub1_application |safe}}
+        </div>
+        <div class=benefits>
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{scrub.scrub1_benefits |safe}}
+            </ul>
+        </div>
+        <div class="heading">
+            {{scrub.scrub2 |safe}}
+        </div>
+        <div class="preparation">
+            <h2>PREPARATION:</h2>
+            {{scrub.scrub2_preperation |safe}}
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ scrub.scrub2_image.url }}" alt="">
+            </div>
+            {{scrub.scrub2_application |safe}}
+        </div>
+        <div class="benefits">
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{scrub.scrub2_benefits |safe}}
+            </ul>
+        </div>
+        {% endfor %}
+        {% for facemask in facemask %}
+        <div class="heading">
+            {{facemask.facemask1 |safe}}
+        </div>
+        <h2>HOW TO APPLY:</h2>
+        <div class="apply">
+            <div class="images">
+                <img src="{{ facemask.facemask1_image.url }}" alt="">
+            </div>
+            {{facemask.facemask1_application |safe}}
+        </div>
+        <div class=benefits>
+            <h3>BENEFITS:</h3>
+            <ul>
+                {{facemask.facemask1_benefits |safe}}
+            </ul>
+        </div>
+        <div class="heading">
+            {{facemask.facemask2 |safe}}
+        </div>
+        <h2>HOW TO APPLY:</h2>
+    <div class="apply">
+        <div class="images">
+            <img src="{{ facemask.facemask2_image.url }}" alt="">
+        </div>
+        {{facemask.facemask2_application |safe}}
+    </div>
+    <div class="benefits">
+        <h3>BENEFITS:</h3>
+        <ul>
+            {{facemask.facemask2_benefits |safe}}
+        </ul>
+    </div>
+    {% endfor %}
+
+</div>
+
+<div class="skin-treatment">
+    <h3 class="message" id="message">
+        {{message}}
+    </h3>
+    <div id="morning_routine">
+        <div class="content">
+            <div class="facewash">
+                {% for facewash in suggested_facewash %}
+                <h1>MORNING ROUTINE BASED ON YOUR SKIN ANALYSIS</h1>
+                <h3>STEP 1 -FACE WASH/CLEANSER:</h3>
+                <div class="essentials">
+                    <div class="head">Essentials:</div>
+                    
+                    <ul class="description">
+                        Opt for face washes with
+                        {{facewash.essentials |safe}}
+                               
+                    </ul>
+                </div>
+                
+                <div class="essentials" id="two">
+                    <div class="head-images">
+                        <img src="{{ facewash.image1.url }}" alt="">
+                        <img src="{{ facewash.image2.url }}" alt="">
+                    </div>
+                    <div class="description">
+                        {{facewash.description |safe}}
+                    </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="serum">
+            {% for serum in suggested_serum %}
+            <h3>STEP 2 -SERUM:</h3>
+            <div class="essentials">
+                <div class="head">Essentials:</div>
+                    
+                    <ul class="description">
+                        Opt for serums with
+                        {{serum.essentials |safe}}
+                               
+                    </ul>
+                </div>
+               
+                <div class="essentials" id="two">
+                    <div class="head-images">
+                        <img src="{{ serum.image1.url }}" alt="">
+                        <img src="{{ serum.image2.url }}" alt="">
+                    </div>
+                    <div class="description">
+                        {{serum.description |safe}}
+                    </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="moisturizer">
+            {% for moisturizer in suggested_moisturizer %}
+            <h3>STEP 3 -MOISTURIZER:</h3>
+            <div class="essentials">
+                <div class="head">Essentials:</div>
+                    
+                    <ul class="description">
+                        Opt for moisturizers with
+                        {{moisturizer.essentials |safe}}
+                               
+                    </ul>
+                </div>
+                
+                <div class="essentials" id="two">
+                    <div class="head-images">
+                        <img src="{{ moisturizer.image1.url }}" alt="">
+                        <img src="{{ moisturizer.image2.url }}" alt="">
+                    </div>
+                    <div class="description">
+                        {{moisturizer.description |safe}}
+                    </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="sunscreen">
+            {% for sunscreen in suggested_sunscreen %}
+            <h3>STEP 4 -SUNSCREEN:</h3>
+            <div class="essentials">
+                <div class="head">Essentials:</div>
+                    
+                    <ul class="description">
+                        Opt for sunscreens with
+                        {{sunscreen.essentials |safe}}
+                               
+                    </ul>
+                </div>
+                <div class="essentials" id="two">
+                    <div class="head-images">
+                        <img src="{{ sunscreen.image1.url }}" alt="">
+                        <img src="{{ sunscreen.image2.url }}" alt="">
+                    </div>
+                    <div class="description">
+                        {{sunscreen.description |safe}}
+                    </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+</div>
+    <div id="night-routine">
+    <h1>NIGHT ROUTINE BASED ON YOUR SKIN ANALYSIS</h1>
+    <div class="night-routine" >
+        <ul>
+            <li>A night skincare routine is essential for maintaining healthy, glowing skin.</li>
+            <li>Skincare routine mirrors morning routine, focusing on gentle cleansing, hydration, 
+                and nourishment to ensure that skin stays balanced and radiant around the clock.</li>
+            <li>Sunscreen should not be used at night because of no sun exposure and it prevents regeneration of skin due to clogged pores.</li>
+            <li>You may add certain additional steps into your routine if you want to like:</li>
+        </ul>
+        <h2>STEP 2 -EXFOLIATE <span class="subheading">(After Cleansing)</span></h2>
+            <div class="steps">
+                <h3>HOW TO APPLY :</h3>
+                <ul>
+                    <li>If you're using a chemical exfoliant (such as a liquid or gel), dispense a small amount onto clean, dry hands or a cotton pad.</li>
+                    <li>If you're using a physical exfoliant (such as a scrub), scoop out a small amount and apply it to damp skin.</li>
+                    <li>Gently Massage into Skin and rinse your face thoroughly with lukewarm water to remove the exfoliant and any loosened dead skin cells. Pat your skin dry with a clean towel.</li><br>
+                </ul>
+            </div>
+            <div class="essentials">
+                <h3>Essentials: </h3>
+                <ul>
+                    Opt for exfoliators with
+                    <li>AHAs, such as glycolic acid, lactic</li>
+                    <li>Salicylic acid(BHA).</li>
+                </ul>
+            </div>
+            <h2>STEP 3 -TONER:</h2>
+            <div class="essentials">
+                <h3>Essentials: </h3>
+                <ul>
+                    Opt for toners with
+                    <li>hydrating or soothing toner to refresh your skin and remove any leftover impurities.</li>
+                    <li>Hyaluronic Acid</li>
+                    <li>Rosewater</li>
+                    <li>Green Tea Extract.</li>
+                </ul>
+            </div>
+            <h2>STEP 6 -EYE CREAM <span class="subheading">(After Applying Serum or Treatment Moisturizer)</span>:</h2>
+            <div class="steps">
+                <h3>HOW TO APPLY :</h3>
+                <ul>
+                    <li>Gently pat on an eye cream to hydrate the delicate skin around your eyes and reduce the appearance of fine lines and wrinkles.</li> <br>
+                </ul> 
+            </div>
+            <div class="essentials">
+                <h3>Essentials: </h3>
+                <ul>
+                    Opt for eye creams with 
+                    <li>ingredients like peptides, hyaluronic acid, Caffeine or   vitamin E.</li>
+                </ul>
+            </div>
+            <h2>STEP 7 -LIP CARE </h2>
+            <div class="essentials">
+                <h3>Essentials: </h3>
+                <ul>
+                    Opt for lip balms with
+                    <li>Ingredients like shea butter, coconut oil, or vitamin E.</li>
+                </ul>
+            </div>
+            <h2>STEP 8 -USE A SLEEPING MASK <span class="subheading">(OPTIONAL)</span>:</h2>
+            <div class="steps">
+                <h3>HOW TO APPLY :</h3>
+                <ul>
+                    <li>Scoop out a pea-sized amount of the sleep mask using a clean spatula or your fingertips.</li>
+                    <li>Once the sleep mask is evenly distributed on your face, use gentle, circular motions to massage it into your skin.</li>
+                    <li>Leave Overnight and wash off in the morning.</li><br>
+                </ul>
+            </div>
+            <div class="essentials">
+                <h3>Essentials: </h3>
+                <ul>
+                    Opt for sleeping masks with
+                    <li>Hyaluronic acid, Glycerin, Niacinamide (Vitamin B3).</li>
+                    <li>Look for ingredients like aloe vera, chamomile, or centella asiatica (cica) extract, which have calming and soothing properties</li><br>
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- footer -->
+<div class="footer-container" style="background:url('../static/footer/images/products1.jpg');background-repeat: no-repeat;background-size: cover;background-position-y: center;">
+    <div class="icons">
+        <a href="https://mail.google.com/mail/"><img class="image" src="{% static 'footer/images/email.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://www.instagram.com/"><img class="image" src="{% static 'footer/images/instagram.png' %}" alt="" width="40px" height="30px"></a>
+        <a href="https://twitter.com/?lang=en"><img class="image" src="{% static 'footer/images/twitter.png' %}" alt="" width="40px" height="30px"></a>
+    </div>
+    <div class="content">FOR MORE INFORMATION CONNECT US AT: <a href="https://mail.google.com/mail/">skinsaviour@gmail.com</a></div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded",()=>{
+        var message=document.getElementById("message");
+        var night_routine=document.getElementById("night-routine");
+        var disclaimer=document.getElementById("disclaimer");
+
+        if(message.innerText){
+            night_routine.style.display="none"
+            disclaimer.style.display="none"
+        }
+        else{
+            night_routine.style.display="block"
+            disclaimer.style.display="block"
+        }
+    })
+
+</script>
