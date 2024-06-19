@@ -1,3 +1,6 @@
+*{
+    margin:0px;
+}
 .signup{
     display: flex;
     flex-direction: column;
